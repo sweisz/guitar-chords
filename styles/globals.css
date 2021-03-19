@@ -1,9 +1,33 @@
+@font-face {
+  font-family: "DIN";
+  src: url("../public/fonts/DIN/DIN-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "SignPainter-HouseScript";
+  src: url("../public/fonts/SignPainter/SignPainter.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Copperplate";
+  src: url("../public/fonts/Copperplate/Copperplate.woff") format("woff");
+}
+
+:root {
+  --accent-color: #ff4064;
+  --second-accent-color: #ffb700;
+  --primary-color: #ff8900;
+  --secondary-color: #00aed9;
+  --primary-text-color: #959595;
+  --primary-headline-color: #ff8900;
+  --primary-sub-headline-color: #00aed9;
+}
+
 html,
 body {
+  font-family: "DIN", sans-serif;
   padding: 0;
+  color: var(--primary-text-color);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +37,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.SkillPageHeadText {
+  font-family: "SignPainter-HouseScript", sans-serif;
+  font-size: 3em;
+}
+.StartPageHeadText {
+  font-family: "SignPainter-HouseScript", sans-serif;
+  font-size: 4em;
+}
+.StartPageSubHeadline,
+.SkillPageSubHeadline {
+  font-family: "Copperplate", serif;
+  font-size: 1em;
 }
