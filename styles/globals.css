@@ -1,9 +1,35 @@
+@font-face {
+  font-family: "DIN";
+  src: url("/fonts/DIN/DIN-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "SignPainter-HouseScript";
+  src: url("/fonts/SignPainter/SignPainter.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Copperplate";
+  src: url("/fonts/Copperplate/Copperplate.woff") format("woff");
+}
+
+:root {
+  --accent-color-red: #ff4064;
+  --accent-color-lightOrange: #ffb700;
+  --accent-color-blue: #00aed9;
+  --accent-color-orange: #ff8900;
+  --font-color-grey: #959595;
+  --font-color-white: #fff;
+  --primary-font-family: "DIN", sans-serif;
+  --headline-font-family: "SignPainter-HouseScript", serif;
+  --subHead-font-family: "Copperplate", serif;
+}
+
 html,
 body {
-  padding: 0;
+  color: var(--font-color-grey);
+  font-family: var(--primary-font-family);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
 }
 
 a {
