@@ -1,6 +1,3 @@
-.btn {
-  border-radius: 6px;
-}
 .btnSkills {
   font-family: var(--primary-font-family);
   background-color: #3c381d5e;
@@ -13,17 +10,4 @@
 .btnSkills:active,
 .btnSkills:hover {
   background: #554d20;
-}
-
-.container {
-  background: rgb(255, 216, 0);
-  background: linear-gradient(
-    10deg,
-    rgba(255, 216, 0, 1) 0%,
-    rgba(255, 245, 188, 1) 100%
-  );
-  margin: 0, auto;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
 }
