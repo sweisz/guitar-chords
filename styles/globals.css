@@ -1,33 +1,35 @@
 @font-face {
   font-family: "DIN";
-  src: url("../public/fonts/DIN/DIN-Regular.woff") format("woff");
+  src: url("/fonts/DIN/DIN-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "SignPainter-HouseScript";
-  src: url("../public/fonts/SignPainter/SignPainter.woff") format("woff");
+  src: url("/fonts/SignPainter/SignPainter.woff") format("woff");
 }
 
 @font-face {
   font-family: "Copperplate";
-  src: url("../public/fonts/Copperplate/Copperplate.woff") format("woff");
+  src: url("/fonts/Copperplate/Copperplate.woff") format("woff");
 }
 
 :root {
-  --accent-color: #ff4064;
-  --second-accent-color: #ffb700;
-  --primary-color: #ff8900;
-  --secondary-color: #00aed9;
-  --primary-text-color: #959595;
-  --primary-headline-color: #ff8900;
-  --primary-sub-headline-color: #00aed9;
+  --accent-color-red: #ff4064;
+  --accent-color-lightOrange: #ffb700;
+  --accent-color-blue: #00aed9;
+  --accent-color-orange: #ff8900;
+  --font-color-grey: #959595;
+  --font-color-white: #fff;
+  --primary-font-family: "DIN", sans-serif;
+  --headline-font-family: "SignPainter-HouseScript", serif;
+  --subHead-font-family: "Copperplate", serif;
 }
 
 html,
 body {
-  font-family: "DIN", sans-serif;
-  padding: 0;
-  color: var(--primary-text-color);
+  color: var(--font-color-grey);
+  font-family: var(--primary-font-family);
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -37,17 +39,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-.SkillPageHeadText {
-  font-family: "SignPainter-HouseScript", sans-serif;
-  font-size: 3em;
-}
-.StartPageHeadText {
-  font-family: "SignPainter-HouseScript", sans-serif;
-  font-size: 4em;
-}
-.StartPageSubHeadline,
-.SkillPageSubHeadline {
-  font-family: "Copperplate", serif;
-  font-size: 1em;
 }
