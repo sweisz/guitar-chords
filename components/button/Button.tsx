@@ -1,15 +1,18 @@
-import "./Button.module.css";
+import styles from "./Button.module.css";
 
 export type ButtonProps = {
-  primary: boolean;
   label: string;
 };
 
-function Button({ primary, label, ...props }: ButtonProps) {
+function Button({ label, ...props }: ButtonProps) {
   return (
-    <button className={`btn ${primary ? "primary" : ""}`} {...props}>
-      {label}
-    </button>
+    // <button className={`btn ${primary ? "primary" : ""}`} {...props}>
+    <div className={styles.container}>
+      <button className={styles.btnSkills} {...props}>
+        {label}
+      </button>
+    </div>
   );
 }
+
 export default Button;

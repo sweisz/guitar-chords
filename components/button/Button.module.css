@@ -1,7 +1,29 @@
 .btn {
-  border-radius: 10px;
+  border-radius: 6px;
 }
-.primary {
-  color: antiquewhite;
-  background-color: darkslategray;
+.btnSkills {
+  font-family: var(--primary-font-family);
+  background-color: #3c381d5e;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.5em;
+  padding: 0.5em 2em;
+}
+.btnSkills:active,
+.btnSkills:hover {
+  background: #554d20;
+}
+
+.container {
+  background: rgb(255, 216, 0);
+  background: linear-gradient(
+    10deg,
+    rgba(255, 216, 0, 1) 0%,
+    rgba(255, 245, 188, 1) 100%
+  );
+  margin: 0, auto;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
 }
