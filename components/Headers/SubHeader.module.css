@@ -1,0 +1,8 @@
+.subHeader {
+  color: var(--accent-color-blue);
+  font-family: var(--subHead-font-family);
+  font-size: 1.5em;
+}
+.big {
+  font-size: 1.8em;
+}
