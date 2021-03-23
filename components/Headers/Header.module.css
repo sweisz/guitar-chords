@@ -1,8 +1,8 @@
 .welcome {
   color: var(--accent-color-orange);
   font-family: var(--headline-font-family);
-  font-size: 4em;
+  font-size: var(--headline-font-size);
 }
 .big {
-  font-size: 7em;
+  font-size: var(--headline-font-size-big);
 }

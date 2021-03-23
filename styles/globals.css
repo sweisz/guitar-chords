@@ -17,17 +17,25 @@
   --accent-color-lightOrange: #ffb700;
   --accent-color-blue: #00aed9;
   --accent-color-orange: #ff8900;
+
+  /* Fonts */
+  --base-font-size: 1rem;
   --font-color-grey: #959595;
   --font-color-white: #fff;
   --primary-font-family: "DIN", sans-serif;
   --headline-font-family: "SignPainter-HouseScript", serif;
+  --headline-font-size: 4em;
+  --headline-font-size-big: 7em;
   --subHead-font-family: "Copperplate", serif;
+  --subHead-font-size: 1.5em;
+  --subHead-font-size-big: 1.8em;
 }
 
 html,
 body {
   color: var(--font-color-grey);
   font-family: var(--primary-font-family);
+  font-size: var(--base-font-size);
   margin: 0;
   padding: 0;
 }

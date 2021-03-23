@@ -11,11 +11,7 @@ function SubHeader({ label, size }: SubHeaderProps) {
       ? `${styles.subHeader} ${styles.big}`
       : `${styles.subHeader}`;
 
-  return (
-    <>
-      <div className={theSize}>{label}</div>
-    </>
-  );
+  return <div className={theSize}>{label}</div>;
 }
 
 export default SubHeader;
