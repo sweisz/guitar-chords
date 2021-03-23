@@ -9,13 +9,12 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: "Button",
+export const Beginner = Template.bind({});
+Beginner.args = {
+  label: "Beginner",
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "Button",
+export const Advanced = Template.bind({});
+Advanced.args = {
+  label: "Advanced",
 };
