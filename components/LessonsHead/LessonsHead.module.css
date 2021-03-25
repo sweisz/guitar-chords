@@ -1,0 +1,25 @@
+.container {
+  background-color: #fff8d0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+.container .header {
+  padding: 1.2em 0 0 1.3em;
+}
+.notes {
+  padding: 1em 1.3em 0 0;
+  justify-self: end;
+}
+.bottomLink {
+  justify-self: end;
+  align-self: end;
+  grid-column-start: span 3;
+  padding-right: 1.3em;
+}
+.colorBeginner {
+  color: var(--accent-color-green);
+}
+.colorAdvanced {
+  color: var(--accent-color-blue);
+}
