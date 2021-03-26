@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: 10% auto 5%;
   align-items: center;
-  list-style-image: url("../../public/assets/listItem-musical-notes.svg");
   padding: 1em;
 }
 
@@ -21,4 +20,8 @@
 }
 .noteIcon {
   height: 1.4em;
+}
+input[type="checkbox"] {
+  width: 1.2em;
+  height: 1.2em;
 }
