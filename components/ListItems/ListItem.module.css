@@ -3,7 +3,7 @@
   color: var(--list-item-color);
   border-top: 1px solid var(--list-item-border-color);
   display: grid;
-  grid-template-columns: 10% auto auto 10%;
+  grid-template-columns: 10% auto 5%;
   align-items: center;
   list-style-image: url("../../public/assets/listItem-musical-notes.svg");
   padding: 1em;
@@ -13,7 +13,9 @@
   background: var(--list-item-background-active);
   color: var(--list-item-color-active);
 }
-
+.listItemTitle {
+  padding-top: 0.3em;
+}
 .checked {
   color: white;
 }

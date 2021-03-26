@@ -7,9 +7,6 @@ export type ListItemProps = {
 };
 
 function ListItem(props: ListItemProps) {
-  //   const isChecked =
-  //     checkBox === true ? `${styles.STYLE} ${styles.STYLE}` : `${styles.STYLE}`;
-
   return (
     <>
       <div className={styles.listItem}>
@@ -17,9 +14,16 @@ function ListItem(props: ListItemProps) {
           className={styles.noteIcon}
           src="/assets/listItem-musical-notes.svg"
         />
-
-        <div>{props.title}</div>
-        <div>{props.checkBox}</div>
+        <span className={styles.listItemTitle}>{props.title}</span>
+        <input type="checkbox" id="listItemCheckBox" />
+      </div>
+      <div className={styles.listItem}>
+        <img
+          className={styles.noteIcon}
+          src="/assets/listItem-musical-notes.svg"
+        />
+        <span className={styles.listItemTitle}>{props.title}</span>
+        <input type="checkbox" id="listItemCheckBox" />
       </div>
     </>
   );
