@@ -11,6 +11,6 @@ const Template: Story<ListItemProps> = (args) => <ListItem {...args} />;
 export const theListItem = Template.bind({});
 theListItem.args = {
   title: "D-Dur",
-  description: "D-Dur",
+  description: "optional",
   checkBox: true,
 };

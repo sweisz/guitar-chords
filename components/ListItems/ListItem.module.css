@@ -8,9 +8,16 @@
   padding: 1em;
 }
 
-.listItem:active {
+.listItem svg {
+  fill: var(--list-item-color);
+  height: 1.4em;
+}
+
+.listItem:active,
+.listItem:active svg {
   background: var(--list-item-background-active);
   color: var(--list-item-color-active);
+  fill: var(--list-item-color-active);
 }
 .listItemTitle {
   padding-top: 0.3em;
@@ -18,9 +25,7 @@
 .checked {
   color: white;
 }
-.noteIcon {
-  height: 1.4em;
-}
+
 input[type="checkbox"] {
   width: 1.2em;
   height: 1.2em;
