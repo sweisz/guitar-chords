@@ -20,11 +20,8 @@
   grid-template-columns: auto;
   justify-items: center;
   align-items: center;
-
-  /* flex: 1; */
-
-  /* flex-direction: column; */
 }
+
 .fullHeader {
   text-align: center;
 }
