@@ -35,6 +35,13 @@
   line-height: 1.3em;
   text-align: center;
 }
-.logo {
+.logo,
+.logoSmall {
   text-align: center;
+}
+.logoSmall {
+  width: 60%;
+}
+.skillButtonsWrapper {
+  align-self: start;
 }
