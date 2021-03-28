@@ -1,4 +1,10 @@
 .container {
+  background: rgb(255, 216, 0);
+  background: linear-gradient(
+    10deg,
+    rgba(255, 216, 0, 1),
+    rgba(255, 245, 188, 1) 100%
+  );
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -8,10 +14,30 @@
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 2rem 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
   align-items: center;
+
+  /* flex: 1; */
+
+  /* flex-direction: column; */
+}
+.fullHeader {
+  text-align: center;
+}
+.header {
+  padding: 1.1rem 0 0;
+  line-height: 0.7;
+}
+.introText {
+  color: var(--accent-color-red);
+  font-size: 1.5em;
+  line-height: 1.3em;
+  text-align: center;
+}
+.logo {
+  text-align: center;
 }

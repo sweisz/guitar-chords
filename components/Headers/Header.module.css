@@ -2,6 +2,7 @@
   color: var(--accent-color-orange);
   font-family: var(--headline-font-family);
   font-size: var(--headline-font-size);
+  line-height: 0.8em;
 }
 .big {
   font-size: var(--headline-font-size-big);
