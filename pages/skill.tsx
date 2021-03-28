@@ -10,7 +10,7 @@ export default function Skill() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Guitar Chords</title>
+        <title>Guitar Chords – Skills</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
