@@ -1,0 +1,32 @@
+.listItem {
+  background: var(--list-item-background);
+  color: var(--list-item-color);
+  border-top: 1px solid var(--list-item-border-color);
+  display: grid;
+  grid-template-columns: 10% auto 5%;
+  align-items: center;
+  padding: 1em;
+}
+
+.listItem svg {
+  fill: var(--list-item-color);
+  height: 1.4em;
+}
+
+.listItem:active,
+.listItem:active svg {
+  background: var(--list-item-background-active);
+  color: var(--list-item-color-active);
+  fill: var(--list-item-color-active);
+}
+.listItemTitle {
+  padding-top: 0.3em;
+}
+.checked {
+  color: white;
+}
+
+input[type="checkbox"] {
+  width: 1.2em;
+  height: 1.2em;
+}

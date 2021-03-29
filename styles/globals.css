@@ -19,6 +19,13 @@
   --accent-color-orange: #ff8900;
   --accent-color-green: #48cf3e;
 
+  /* ListItems */
+  --list-item-background-active: #959595;
+  --list-item-color-active: white;
+  --list-item-background: #f2f2f2;
+  --list-item-color: #a2a2a2;
+  --list-item-border-color: #707070;
+
   /* Fonts */
   --base-font-size: 1rem;
   --font-color-grey: #959595;
