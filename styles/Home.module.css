@@ -41,3 +41,27 @@
 .logo {
   text-align: center;
 }
+
+.fullHeader {
+  text-align: center;
+}
+.header {
+  padding: 1.1rem 0 0;
+  line-height: 0.7;
+}
+.introText {
+  color: var(--accent-color-red);
+  font-size: 1.5em;
+  line-height: 1.3em;
+  text-align: center;
+}
+.logo,
+.logoSmall {
+  text-align: center;
+}
+.logoSmall {
+  width: 60%;
+}
+.skillButtonsWrapper {
+  align-self: start;
+}
