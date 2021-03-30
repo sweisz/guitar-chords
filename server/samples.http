@@ -1,0 +1,8 @@
+### GET all GuitarTabs
+GET http://localhost:3000/api/tabs
+
+
+### GET all GuitarTabs with `beginner` in GuitarTabs
+GET http://localhost:3000/api/tabs?category=beginner
+
+
