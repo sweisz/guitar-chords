@@ -1,0 +1,15 @@
+### GET all Tabs
+GET http://localhost:3000/api/tabs
+
+### GET all categorys
+GET http://localhost:3000/api/tabs?search
+
+
+### GET all Tabs with `beginner` in Tabs
+GET http://localhost:3000/api/tabs?search=beginner
+
+### GET all Tabs with `advanced` in Tabs
+GET http://localhost:3000/api/tabs?search=advanced
+
+### GET `this` in `tex:` 
+GET http://localhost:3000/api/tabs?search=Second
