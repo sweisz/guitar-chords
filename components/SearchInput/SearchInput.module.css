@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.searchInput {
+  border: none;
+  border-bottom: 2px solid rgb(167 166 166);
+  padding: 1em;
+  width: 90%;
+}
+.magnifyingGlass {
+  align-self: center;
+  width: 1.5em;
+  height: 1.5em;
+}
