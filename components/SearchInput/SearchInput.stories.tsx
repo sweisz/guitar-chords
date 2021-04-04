@@ -9,6 +9,6 @@ export default {
 
 const Template: Story<SearchInputProps> = (args) => <SearchInput {...args} />;
 export const tabSearchInput = Template.bind({});
-SearchInput.args = {
-  label: "Search Tabs",
+tabSearchInput.args = {
+  label: "",
 };
