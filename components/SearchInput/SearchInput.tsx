@@ -28,23 +28,32 @@ function SearchInput({ label }: SearchInputProps) {
   }, [search]);
 
   return (
-    <div className={styles.container}>
-      <label>
-        {label}
-        <input
-          className={styles.searchInput}
-          type="text"
-          placeholder="Search Tabs or Lessons"
-          value={search}
-          onChange={(event) => setSearch(event.target.value)}
+    <>
+      <div className={styles.container}>
+        <label>
+          {label}
+          <input
+            className={styles.searchInput}
+            type="text"
+            placeholder="Search Tabs or Lessons"
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+          />
+        </label>
+        <img
+          className={styles.magnifyingGlass}
+          src="/assets/icon-magnifying-glass.svg"
+          alt="magnifying glass"
         />
-      </label>
-      <img
-        className={styles.magnifyingGlass}
-        src="/assets/icon-magnifying-glass.svg"
-        alt=""
-      />
-    </div>
+      </div>
+      <ul>
+        {tabs?.map((tabs) => (
+          <li key={tabs._id}>
+            {tabs.category} {tabs.tex}
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 
