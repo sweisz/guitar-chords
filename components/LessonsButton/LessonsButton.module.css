@@ -1,0 +1,19 @@
+.btn {
+  border: none;
+  background-color: #959595;
+  color: #f2f2f2;
+  padding: 1em;
+  margin-right: 1px;
+}
+.btn:last-child {
+  margin-right: 0;
+}
+.btn:hover,
+.btn:active {
+  background-color: #f2f2f2;
+  color: #959595;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
