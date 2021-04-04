@@ -14,9 +14,11 @@ const Template: Story<LessonsButtonProps> = (args) => (
 export const Beginner = Template.bind({});
 Beginner.args = {
   labelLeft: "Beginner",
+  route: "/beginner",
 };
 
 export const Advanced = Template.bind({});
 Advanced.args = {
   labelRight: "Advanced",
+  route: "/advanced",
 };
