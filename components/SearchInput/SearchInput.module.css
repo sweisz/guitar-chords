@@ -1,11 +1,12 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 80% 10%;
+  justify-content: center;
+  margin-top: 1em;
 }
 
 .searchInput {
   border: none;
-  border-bottom: 2px solid rgb(167 166 166);
   padding: 1em;
   width: 90%;
 }
