@@ -2,11 +2,13 @@
   border: none;
   background-color: #959595;
   color: #f2f2f2;
+  cursor: pointer;
   padding: 1em;
-  margin-right: 1px;
+  text-align: center;
+  vertical-align: baseline;
 }
-.btn:last-child {
-  margin-right: 0;
+.btn a {
+  vertical-align: -webkit-baseline-middle;
 }
 .btn:hover,
 .btn:active {
@@ -16,4 +18,5 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1px;
 }

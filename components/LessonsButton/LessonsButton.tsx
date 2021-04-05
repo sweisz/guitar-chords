@@ -1,22 +1,22 @@
 import styles from "./LessonsButton.module.css";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 export type LessonsButtonProps = {
-  labelLeft: string;
-  labelRight: string;
-  route: string;
+  label: "Beginner" | "Advanced";
+  href: "/beginner" | "/advanced";
 };
 
-function LessonsButton({ labelLeft, labelRight, route }: LessonsButtonProps) {
-  const router = useRouter();
+function LessonsButton({ label, href }: LessonsButtonProps) {
+  const btnLabel = label === "Beginner" ? "Beginner" : "Advanced";
+  const btnHref = href === "/beginner" ? "/beginner" : "/advanced";
+  console.log({ btnHref });
   return (
     <div className={styles.container}>
-      <button className={styles.btn} onClick={() => router.push(route)}>
-        {labelLeft}
-      </button>
-      <button className={styles.btn} onClick={() => router.push(route)}>
-        {labelRight}
-      </button>
+      <Link href={btnHref}>
+        <div className={styles.btn}>
+          <a>{btnLabel}</a>
+        </div>
+      </Link>
     </div>
   );
 }
