@@ -7,9 +7,9 @@
   );
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
   align-items: center;
 }
 .main {
