@@ -13,14 +13,15 @@
   align-items: center;
 }
 .main {
-  padding: 2rem 0;
+  padding: 0;
   height: 100vh;
   display: grid;
   grid-template-columns: auto;
   justify-items: center;
-  align-items: center;
+  align-items: start;
 }
 .fullHeader {
+  padding-top: 2rem;
   text-align: center;
 }
 .header {
