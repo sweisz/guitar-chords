@@ -1,3 +1,10 @@
-.main {
+.container {
   background-color: white;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  align-content: start;
+  height: 100vh;
+}
+.footer {
+  color: red;
 }

@@ -12,13 +12,11 @@ function LessonsButton({ label, href }: LessonsButtonProps) {
     href === "/lessons/beginner" ? "/lessons/beginner" : "/lessons/advanced";
   console.log({ btnHref });
   return (
-    <div className={styles.container}>
-      <Link href={btnHref}>
-        <div className={styles.btn}>
-          <a>{btnLabel}</a>
-        </div>
-      </Link>
-    </div>
+    <Link href={btnHref}>
+      <div className={styles.btn}>
+        <a>{btnLabel}</a>
+      </div>
+    </Link>
   );
 }
 

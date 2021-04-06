@@ -16,7 +16,7 @@ function LessonsHead({ label, link }: LessonsHeadProps) {
     <>
       <div className={styles.container}>
         <div className={styles.header}>
-          <Header size="small" label="Guitar" />
+          <Header size="small" label="Lessons" />
         </div>
 
         <div className={styles.notes}>
