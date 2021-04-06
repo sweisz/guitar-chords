@@ -1,18 +1,13 @@
 import { useEffect, useState } from "react";
 import styles from "./SearchInput.module.css";
 
-export type SearchInputProps = {
-  onSearch(search: string): void;
-};
-
 export type Tab = {
   _id: string;
   category: string;
   tex: string;
 };
 
-// eslint-disable-next-line no-empty-pattern
-function SearchInput({}: SearchInputProps) {
+function SearchInput() {
   const [search, setSearch] = useState<string>("");
   const [tabs, setTabs] = useState<Tab[]>(null);
 
