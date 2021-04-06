@@ -5,16 +5,12 @@
     rgba(255, 216, 0, 1),
     rgba(255, 245, 188, 1) 100%
   );
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: grid;
-  grid-template-columns: auto;
-  justify-items: center;
-  align-items: center;
+  height: 100vh;
+  padding: 0;
 }
 .main {
   padding: 0;
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: auto;
   justify-items: center;

@@ -9,8 +9,7 @@ export default function LessonsPage() {
         <title>Guitar Chords – Lessons</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
+      <main>
         <Lessons />
       </main>
     </div>

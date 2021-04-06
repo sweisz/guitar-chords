@@ -1,7 +1,7 @@
 .listItem {
   background: var(--list-item-background);
   color: var(--list-item-color);
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--list-item-border-color);
   display: grid;
   grid-template-columns: 10% auto 5%;
   align-items: center;

@@ -13,9 +13,9 @@ function LessonsButton({ label, href }: LessonsButtonProps) {
   console.log({ btnHref });
   return (
     <Link href={btnHref}>
-      <div className={styles.btn}>
-        <a>{btnLabel}</a>
-      </div>
+      <a>
+        <div className={styles.btn}>{btnLabel}</div>
+      </a>
     </Link>
   );
 }

@@ -8,9 +8,7 @@ import SearchInput from "../SearchInput/SearchInput";
 function Lessons() {
   return (
     <div className={styles.container}>
-      <div>
-        <LessonsHead label={"Beginner"} link={"/beginner"} />
-      </div>
+      <LessonsHead label={"Beginner"} link={"/beginner"} />
       <div>
         <SearchInput />
       </div>
@@ -20,9 +18,7 @@ function Lessons() {
           checkBox={false}
         />
       </div>
-      <div>
-        <ButtonGroup />
-      </div>
+      <ButtonGroup />
     </div>
   );
 }
