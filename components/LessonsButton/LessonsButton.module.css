@@ -1,0 +1,22 @@
+.btn {
+  border: none;
+  background-color: #959595;
+  color: #f2f2f2;
+  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+  vertical-align: baseline;
+}
+.btn a {
+  vertical-align: -webkit-baseline-middle;
+}
+.btn:hover,
+.btn:active {
+  background-color: #f2f2f2;
+  color: #959595;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1px;
+}

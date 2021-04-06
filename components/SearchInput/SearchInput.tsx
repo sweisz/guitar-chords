@@ -1,18 +1,13 @@
 import { useEffect, useState } from "react";
 import styles from "./SearchInput.module.css";
 
-export type SearchInputProps = {
-  onSearch(search: string): void;
-  label: string;
-};
-
 export type Tab = {
   _id: string;
   category: string;
   tex: string;
 };
 
-function SearchInput({ label }: SearchInputProps) {
+function SearchInput() {
   const [search, setSearch] = useState<string>("");
   const [tabs, setTabs] = useState<Tab[]>(null);
 
@@ -31,7 +26,6 @@ function SearchInput({ label }: SearchInputProps) {
     <>
       <div className={styles.container}>
         <label>
-          {label}
           <input
             className={styles.searchInput}
             type="text"

@@ -7,20 +7,21 @@
   );
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main {
-  padding: 2rem 0;
-  height: 100vh;
   display: grid;
   grid-template-columns: auto;
   justify-items: center;
   align-items: center;
 }
+.main {
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: start;
+}
 .fullHeader {
+  padding-top: 2rem;
   text-align: center;
 }
 .header {

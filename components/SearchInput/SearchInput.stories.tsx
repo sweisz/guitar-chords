@@ -9,6 +9,3 @@ export default {
 
 const Template: Story<SearchInputProps> = (args) => <SearchInput {...args} />;
 export const tabSearchInput = Template.bind({});
-tabSearchInput.args = {
-  label: "",
-};
