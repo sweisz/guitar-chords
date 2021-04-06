@@ -3,12 +3,13 @@ import Link from "next/link";
 
 export type LessonsButtonProps = {
   label: "Beginner" | "Advanced";
-  href: "/beginner" | "/advanced";
+  href: "/lessons/beginner" | "/lessons/advanced";
 };
 
 function LessonsButton({ label, href }: LessonsButtonProps) {
   const btnLabel = label === "Beginner" ? "Beginner" : "Advanced";
-  const btnHref = href === "/beginner" ? "/beginner" : "/advanced";
+  const btnHref =
+    href === "/lessons/beginner" ? "/lessons/beginner" : "/lessons/advanced";
   console.log({ btnHref });
   return (
     <div className={styles.container}>

@@ -1,0 +1,13 @@
+import React from "react";
+import { Story, Meta } from "@storybook/react/types-6-0";
+import Lessons from "./Lessons";
+
+export default {
+  title: "Pages/Lessons",
+  component: Lessons,
+} as Meta;
+
+const Template: Story = () => <Lessons />;
+
+export const Primary = Template.bind({});
+Primary.args = {};

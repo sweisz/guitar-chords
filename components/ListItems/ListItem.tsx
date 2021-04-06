@@ -24,7 +24,11 @@ function ListItem({ title, checkBox }: ListItemProps) {
           />
         </svg>
         <span className={styles.listItemTitle}>{title}</span>
-        <input type="checkbox" checked={checkBox} />
+        <input
+          className={styles.inputCheck}
+          type="checkbox"
+          checked={checkBox}
+        />
       </div>
       <div className={styles.listItem}>
         <svg
@@ -41,7 +45,11 @@ function ListItem({ title, checkBox }: ListItemProps) {
           />
         </svg>
         <span className={styles.listItemTitle}>{title}</span>
-        <input type="checkbox" checked={checkBox} />
+        <input
+          className={styles.inputCheck}
+          type="checkbox"
+          checked={checkBox}
+        />
       </div>
     </>
   );
