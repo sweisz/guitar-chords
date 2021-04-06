@@ -27,8 +27,8 @@ export default function Skill() {
           </Link>
         </div>
         <div className={styles.skillButtonsWrapper}>
-          <Button label="Beginner" route="beginner" />
-          <Button label="Advanced" route="advanced" />
+          <Button label="Beginner" route="/lessons/beginner" />
+          <Button label="Advanced" route="/lessons/advanced" />
         </div>
       </main>
     </div>
