@@ -5,8 +5,8 @@ import styles from "./ButtonGroup.module.css";
 function ButtonGroup() {
   return (
     <div className={styles.container}>
-      <LessonsButton label={"Beginner"} href={"/beginner"} />
-      <LessonsButton label={"Advanced"} href={"/advanced"} />
+      <LessonsButton label={"Beginner"} href={"/lessons/beginner"} />
+      <LessonsButton label={"Advanced"} href={"/lessons/advanced"} />
     </div>
   );
 }
