@@ -12,7 +12,7 @@ function Lessons() {
         <LessonsHead label={"Beginner"} link={"/beginner"} />
       </div>
       <div>
-        <SearchInput onSearch={null} />
+        <SearchInput />
       </div>
       <div>
         <ListItems
