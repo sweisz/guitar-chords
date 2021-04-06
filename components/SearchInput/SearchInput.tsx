@@ -3,7 +3,6 @@ import styles from "./SearchInput.module.css";
 
 export type SearchInputProps = {
   onSearch(search: string): void;
-  label: string;
 };
 
 export type Tab = {
@@ -12,7 +11,8 @@ export type Tab = {
   tex: string;
 };
 
-function SearchInput({ label }: SearchInputProps) {
+// eslint-disable-next-line no-empty-pattern
+function SearchInput({}: SearchInputProps) {
   const [search, setSearch] = useState<string>("");
   const [tabs, setTabs] = useState<Tab[]>(null);
 
@@ -31,7 +31,6 @@ function SearchInput({ label }: SearchInputProps) {
     <>
       <div className={styles.container}>
         <label>
-          {label}
           <input
             className={styles.searchInput}
             type="text"

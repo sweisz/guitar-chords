@@ -9,7 +9,7 @@ function Lessons() {
     <div className={styles.background}>
       <LessonsHead label={"Beginner"} link={"/beginner"} />
       <ListItems title={"Stairway To Heaven - Led Zeppelin"} checkBox={false} />
-      <LessonsButton label={"Beginner"} href={"/beginner"} />
+      <LessonsButton label={"Beginner"} href={"/lessons/beginner"} />
     </div>
   );
 }
