@@ -2,5 +2,5 @@
   background-color: white;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
-  height: 100vh;
+  height: 100%;
 }

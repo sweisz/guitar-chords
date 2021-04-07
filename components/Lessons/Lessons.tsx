@@ -9,9 +9,8 @@ function Lessons() {
   return (
     <div className={styles.container}>
       <LessonsHead label={"Beginner"} link={"/beginner"} />
-      <div>
-        <SearchInput />
-      </div>
+
+      <SearchInput />
       <div>
         <ListItems
           title={"Stairway To Heaven - Led Zeppelin"}
