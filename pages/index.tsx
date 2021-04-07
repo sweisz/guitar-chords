@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Lessons.module.css";
 import Header from "../components/Headers/Header";
 import SubHeader from "../components/Headers/SubHeader";
 import Logo from "../components/Logo/Logo";
