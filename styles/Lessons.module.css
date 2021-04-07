@@ -1,37 +1,4 @@
 .main {
-  background: rgb(255, 216, 0);
-  background: linear-gradient(
-    10deg,
-    rgba(255, 216, 0, 1),
-    rgba(255, 245, 188, 1) 100%
-  );
   padding: 0;
   height: 100vh;
-}
-.fullHeader {
-  padding-top: 2rem;
-  text-align: center;
-}
-.header {
-  padding: 1.1rem 0 0;
-  line-height: 0.7;
-}
-.introText {
-  color: var(--accent-color-red);
-  font-size: 1.5em;
-  line-height: 1.3em;
-  text-align: center;
-}
-.logo {
-  text-align: center;
-}
-.logo,
-.logoSmall {
-  text-align: center;
-}
-.logoSmall {
-  width: 60%;
-}
-.skillButtonsWrapper {
-  align-self: start;
 }

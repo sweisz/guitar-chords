@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Lessons.module.css";
+import styles from "../styles/Welcome.module.css";
 import Header from "../components/Headers/Header";
 import SubHeader from "../components/Headers/SubHeader";
 import Logo from "../components/Logo/Logo";
@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.fullHeader}>
+        <div className={styles.header}>
           <Header label="Guitar" size="big" />
           <SubHeader label="Chords" size="small" />
         </div>

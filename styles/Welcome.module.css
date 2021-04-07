@@ -1,0 +1,25 @@
+.main {
+  background: rgb(255, 216, 0);
+  background: linear-gradient(
+    10deg,
+    rgba(255, 216, 0, 1),
+    rgba(255, 245, 188, 1) 100%
+  );
+  display: grid;
+  grid-template-columns: auto;
+  height: 100vh;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+}
+.logo,
+.header {
+  text-align: center;
+}
+.introText {
+  color: var(--accent-color-red);
+  font-size: 1.5em;
+  line-height: 1.3em;
+  text-align: center;
+}
