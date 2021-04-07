@@ -1,5 +1,11 @@
 import { Db, MongoClient } from "mongodb";
 
+export type Tab = {
+  _id: string;
+  category: string;
+  tex: string;
+};
+
 let client: MongoClient = null;
 let db: Db = null;
 

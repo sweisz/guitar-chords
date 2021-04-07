@@ -1,27 +1,11 @@
-import { useEffect, useState } from "react";
 import styles from "./SearchInput.module.css";
 
-export type Tab = {
-  _id: string;
-  category: string;
-  tex: string;
+export type SearchInputProps = {
+  search: string;
+  onSearch: (search: string) => void;
 };
 
-function SearchInput() {
-  const [search, setSearch] = useState<string>("");
-  const [tabs, setTabs] = useState<Tab[]>(null);
-
-  useEffect(() => {
-    if (!search) {
-      return;
-    }
-    const url = `/api/tabs/?search=${search}`;
-    console.log(url);
-    fetch(url)
-      .then((response) => response.json())
-      .then((tabs) => setTabs(tabs));
-  }, [search]);
-
+function SearchInput({ search, onSearch }: SearchInputProps) {
   return (
     <>
       <div className={styles.container}>
@@ -31,7 +15,7 @@ function SearchInput() {
             type="text"
             placeholder="Search Tabs or Lessons"
             value={search}
-            onChange={(event) => setSearch(event.target.value)}
+            onChange={(event) => onSearch(event.target.value)}
           />
         </label>
         <img
@@ -40,13 +24,6 @@ function SearchInput() {
           alt="magnifying glass"
         />
       </div>
-      <ul>
-        {tabs?.map((tabs) => (
-          <li key={tabs._id}>
-            {tabs.category} {tabs.tex}
-          </li>
-        ))}
-      </ul>
     </>
   );
 }
