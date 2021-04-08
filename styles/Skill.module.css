@@ -1,0 +1,18 @@
+.main {
+  background: rgb(255, 216, 0);
+  background: linear-gradient(
+    10deg,
+    rgba(255, 216, 0, 1),
+    rgba(255, 245, 188, 1) 100%
+  );
+  display: grid;
+  grid-template-columns: auto;
+  height: 100vh;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.logo,
+.header {
+  text-align: center;
+}
