@@ -9,5 +9,5 @@ export default {
 
 const Template: Story = () => <Lessons />;
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const lessons = Template.bind({});
+lessons.args = {};
