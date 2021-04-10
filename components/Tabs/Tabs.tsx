@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import type alphaTabType from "@coderline/alphatab";
-import ButtonGroup from "../ButtonGroup/ButtonGroup";
-import LessonsHead from "../LessonsHead/LessonsHead";
 
 declare let alphaTab: typeof alphaTabType;
 export type TabsProps = {
@@ -44,17 +42,5 @@ export default function Tabs({ tex }: TabsProps) {
   if (!isScriptLoaded) {
     return <div>Loading AlphaTab...</div>;
   }
-  return (
-    <>
-      <section id="app">
-        <header>
-          <LessonsHead label={"Beginner"} link={"/beginner"} />
-        </header>
-        <main ref={tabsEl}></main>
-        <footer>
-          <ButtonGroup />
-        </footer>
-      </section>
-    </>
-  );
+  return <section ref={tabsEl}></section>;
 }
