@@ -1,12 +1,13 @@
 import styles from "./ListItem.module.css";
 
 export type ListItemProps = {
+  artist: string;
   title: string;
   description?: string;
-  checkBox: boolean;
+  checkBox?: boolean;
 };
 
-function ListItem({ title, checkBox }: ListItemProps) {
+function ListItem({ artist, title }: ListItemProps) {
   return (
     <>
       <div className={styles.listItem}>
@@ -23,12 +24,9 @@ function ListItem({ title, checkBox }: ListItemProps) {
             transform="translate(-6.75 -3.375)"
           />
         </svg>
-        <span className={styles.listItemTitle}>{title}</span>
-        <input
-          className={styles.inputCheck}
-          type="checkbox"
-          checked={checkBox}
-        />
+        <span className={styles.listItemTitle}>
+          {artist}—{title}
+        </span>
       </div>
     </>
   );

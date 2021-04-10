@@ -5,7 +5,6 @@ import { withDatabase } from "../../server/utils";
 export default withDatabase(
   async (req: NextApiRequest, res: NextApiResponse) => {
     const { search } = req.query;
-    console.log(req.query);
     if (Array.isArray(search)) {
       return res.status(400).end();
     }
