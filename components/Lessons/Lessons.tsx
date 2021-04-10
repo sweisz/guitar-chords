@@ -25,7 +25,11 @@ function Lessons() {
         {tabs &&
           tabs.map((tab) => {
             return (
-              <ListItems key={tab._id} artist={tab.artist} title={tab.title} />
+              <ListItems
+                key={tab._id}
+                artistName={tab.artist}
+                title={tab.title}
+              />
             );
           })}
       </div>
