@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import ButtonGroup from "../components/ButtonGroup/ButtonGroup";
-import LessonsHead from "../components/LessonsHead/LessonsHead";
+import TabsHead from "../components/TabsHead/TabsHead";
 import Tabs from "../components/Tabs/Tabs";
 import styles from "../styles/Tab.module.css";
 
@@ -12,7 +12,7 @@ export default function Tab() {
         <title>Guitar Chords - Tab</title>
       </Head>
       <section className={styles.container}>
-        <LessonsHead label="Beginner" link="/tab" />
+        <TabsHead label="Beginner" link="/tab" />
         <main>
           <Tabs
             tex={
