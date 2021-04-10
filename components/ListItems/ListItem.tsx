@@ -1,13 +1,13 @@
 import styles from "./ListItem.module.css";
 
 export type ListItemProps = {
-  artist: string;
+  artistName: string;
   title: string;
   description?: string;
   checkBox?: boolean;
 };
 
-function ListItem({ artist, title }: ListItemProps) {
+function ListItem({ artistName, title }: ListItemProps) {
   return (
     <>
       <div className={styles.listItem}>
@@ -25,7 +25,7 @@ function ListItem({ artist, title }: ListItemProps) {
           />
         </svg>
         <span className={styles.listItemTitle}>
-          {artist}—{title}
+          {artistName}—{title}
         </span>
       </div>
     </>
