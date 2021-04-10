@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 80% 10%;
   justify-content: center;
-  margin-top: 1em;
+  margin: 1em 0;
 }
 
 .searchInput {
