@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Lessons.module.css";
 import ListItems from "../ListItems/ListItem";
-import LessonsHead from "../LessonsHead/LessonsHead";
-import ButtonGroup from "../ButtonGroup/ButtonGroup";
 import SearchInput from "../SearchInput/SearchInput";
 
 function Lessons() {
@@ -17,10 +15,7 @@ function Lessons() {
 
   return (
     <div className={styles.container}>
-      <LessonsHead label={"Beginner"} link={"/beginner"} />
-
       <SearchInput search={searchValue} onSearch={setSearchValue} />
-
       <div>
         {tabs &&
           tabs.map((tab) => {
@@ -33,7 +28,6 @@ function Lessons() {
             );
           })}
       </div>
-      <ButtonGroup />
     </div>
   );
 }

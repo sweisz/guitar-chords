@@ -10,7 +10,7 @@ function LessonsButton({ label, href }: LessonsButtonProps) {
   const btnLabel = label === "Beginner" ? "Beginner" : "Advanced";
   const btnHref =
     href === "/lessons/beginner" ? "/lessons/beginner" : "/lessons/advanced";
-  console.log({ btnHref });
+
   return (
     <Link href={btnHref}>
       <a>

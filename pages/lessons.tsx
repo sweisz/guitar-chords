@@ -1,17 +1,17 @@
-import Head from "next/head";
+import React from "react";
 import styles from "../styles/Lessons.module.css";
+import ButtonGroup from "../components/ButtonGroup/ButtonGroup";
+import LessonsHead from "../components/LessonsHead/LessonsHead";
 import Lessons from "../components/Lessons/Lessons";
 
 export default function LessonsPage() {
   return (
-    <>
-      <Head>
-        <title>Guitar Chords – Lessons</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
+    <section className={styles.container}>
+      <LessonsHead label={"Beginner"} link={"lessons/beginner"} />
+      <main>
         <Lessons />
       </main>
-    </>
+      <ButtonGroup />
+    </section>
   );
 }
