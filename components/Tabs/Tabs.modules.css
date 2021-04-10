@@ -1,0 +1,24 @@
+#app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+#app > header {
+  grid-area: header;
+}
+
+#app > main {
+  grid-area: main;
+  overflow: auto;
+  padding: 1rem;
+}
+
+#app > footer {
+  grid-area: footer;
+}
